@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Primitive Calculator</title>
+    <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      background: -webkit-linear-gradient(blue, lightblue);
+      height: 100vh;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 2% auto;
+      padding: 3% 1%;
+      border: 1px solid red;
+      background: -webkit-linear-gradient(snow, mintcream);
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      width: 90%;
+      margin: 4% auto;
+      line-height: 1.5em;
+    }
+    main div {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    @media (min-width: 800px){
+      main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: 2% auto;
+        padding: 7% 2%;
+        border: 1px solid red;
+      }
+      main div {
+        margin-bottom: 0;
+      }
+      p {
+        width: 60%;
+      }
+    }
+    </style>
+  </head>
+
+  <body>
+<h1>Primitive Calculator</h1>
+    <main>
+
+    <div>
+<input id="xx"> +
+<input id="yy">
+
+<button id="zbir">=</button>
+<p id="prostor"></p>
+</div>
+
+<div>
+<input id="kk"> -
+<input id="ll">
+
+<button id="razlika">=</button>
+<p id="prostorminus"></p>
+</div>
+
+<div>
+<input id="pp"> *
+<input id="rr">
+
+<button id="proizvod">=</button>
+<p id="prostorputa"></p>
+</div>
+
+<div>
+<input id="dd"> /
+<input id="jj">
+
+<button id="kolicnik">=</button>
+<p id="prostordeljenje"></p>
+</div>
+</main>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <script src="main2.js"></script>
+  </body>
+</html>
