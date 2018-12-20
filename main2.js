@@ -44,33 +44,33 @@ zbir.addEventListener("click", sabiranje);
 
 function oduzimanje(){
   let razlike = 0;
-  const prvi = Number(document.getElementById("kk").value);
-  const drugi = Number(document.getElementById("ll").value);
+  const prvi2 = Number(document.getElementById("kk").value);
+  const drugi2 = Number(document.getElementById("ll").value);
   const razlika = document.getElementById("razlika");
   const prostor = document.getElementById("prostorminus");
-  razlike = prvi - drugi;
+  razlike = prvi2 - drugi2;
   prostorminus.innerHTML = "Rezultat je: " + razlike;
 }
 razlika.addEventListener("click", oduzimanje);
 
 function mnozenje(){
   let mnozenja = 1;
-  const prvi = Number(document.getElementById("pp").value);
-  const drugi = Number(document.getElementById("rr").value);
+  const prvi3 = Number(document.getElementById("pp").value);
+  const drugi3 = Number(document.getElementById("rr").value);
   const proizvod = document.getElementById("proizvod");
   const prostor = document.getElementById("prostorputa");
-  mnozenja = prvi * drugi;
+  mnozenja = prvi3 * drugi3;
   prostorputa.innerHTML = "Rezultat je: " + mnozenja;
 }
 proizvod.addEventListener("click", mnozenje);
 
 function deljenje(){
   let deljenja = 1;
-  const prvi = Number(document.getElementById("dd").value);
-  const drugi = Number(document.getElementById("jj").value);
+  const prvi4 = Number(document.getElementById("dd").value);
+  const drugi4 = Number(document.getElementById("jj").value);
   const kolicnik = document.getElementById("kolicnik");
   const prostor = document.getElementById("prostordeljenje");
-  deljenja = prvi / drugi;
+  deljenja = prvi4 / drugi4;
   prostordeljenje.innerHTML = "Rezultat je: " + deljenja;
 }
 kolicnik.addEventListener("click", deljenje);
@@ -85,3 +85,19 @@ kolicnik.addEventListener("click", deljenje);
  imaZnakovi = false;
 }
 }*/
+const reset = document.getElementById("reset");
+function brisanje(){
+  prostor.innerHTML = "";
+  prostorminus.innerHTML ="";
+  prostorputa.innerHTML = "";
+  prostordeljenje.innerHTML = "";
+  xx.value = "";
+  yy.value = "";
+  kk.value = "";
+  ll.value = "";
+  pp.value = "";
+  rr.value = "";
+  dd.value = "";
+  jj.value = "";
+}
+reset.addEventListener("click", brisanje);
